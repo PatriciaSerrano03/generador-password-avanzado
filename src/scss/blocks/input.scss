@@ -1,0 +1,42 @@
+.input-field{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    background-color: #241442;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.option-label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-inline: 2px;
+    width: 60px;
+    height: 30px;
+    border-radius: 1rem;
+    background-color: rgb(125, 38, 187);
+}
+
+.option-input{
+    display: none;
+}
+
+.option-label::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: translate 0.3s;
+}
+
+.option-input:checked + .option-label{
+    background-color: rgb(61, 6, 79);
+}
+.option-input:checked + .option-label::after{
+    translate: 30px;
+}
