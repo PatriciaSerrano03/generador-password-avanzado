@@ -1,0 +1,44 @@
+.password_generator {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+}
+.password {
+    height: 50px;
+    width: 370px;
+    border-radius: 10px;
+    background-color: #241442;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.range_label{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #241442;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    .range{
+        width: 100%;
+        accent-color: #7400e4;
+    }
+}
+
+.button{
+    height: 50px;
+    width: 370px;
+    background-color: #a200d4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}

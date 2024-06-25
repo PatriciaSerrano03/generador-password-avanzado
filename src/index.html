@@ -9,8 +9,24 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <h1>HOLA</h1>
-    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat rerum pariatur iste nemo quos praesentium alias nostrum dolore magni? Provident magni incidunt harum officiis consequatur ad temporibus laboriosam hic illum! </p>
+    <div class="password_generator">
+      <p id="password" class="password">P4$5W0RD!</p>
+      <div>
+        <label for="label" class="range_label">
+          LENGTH: 
+          <span id="length_text">16</span>
+          <span id="password_type"></span>
+        </label>
+      </div>
+      
+      <div class="container">
+        <p>4</p>
+        <input id="range" type="range" class="range" min="4" max="32">
+        <p>32</p>
+      </div>
+      <button id="button_password" class="button">Generate Password</button>
+    </div>
+    
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
